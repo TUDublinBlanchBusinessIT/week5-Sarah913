@@ -18,12 +18,10 @@ Route::get('/', function () {
 });
 
 
-Route::resource('products', App\Http\Controllers\ProductController::class);
+Route::resource('members', App\Http\Controllers\memberController::class);
 
 
-Route::resource('scorders', App\Http\Controllers\ScorderController::class);
+Route::resource('courts', App\Http\Controllers\courtController::class);
 
 
-Route::resource('orderdetails', App\Http\Controllers\OrderdetailController::class);
-
-Route::get('product/displaygrid', 'App\Http\Controllers\ProductController@displayGrid')->name('products.displaygrid');
+Route::resource('bookings', App\Http\Controllers\bookingController::class);
